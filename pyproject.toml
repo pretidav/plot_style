@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "plot_style"
+version = "0.1.0"
+description = "Retro / digital-brutalist matplotlib style: monospace font, hard black box, dotted grid, one accent colour."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["matplotlib>=3.5"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+plot_style = ["*.mplstyle", "fonts/*.ttf", "fonts/OFL.txt"]

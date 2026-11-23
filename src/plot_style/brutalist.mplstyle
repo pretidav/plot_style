@@ -1,0 +1,54 @@
+# Retro / digital-brutalist style: monospace font, hard black box, square markers, dotted grid, one accent colour.
+# The font is Space Mono (install it to get the exact look); the others are fallbacks.
+
+# colours: PAPER #f2efe6, INK #000000, ACCENT #ff3b00
+figure.facecolor: f2efe6
+figure.figsize: 8, 5
+savefig.facecolor: f2efe6
+savefig.dpi: 150
+
+font.family: Space Mono, Monaco, Courier New, monospace
+mathtext.fontset: custom
+mathtext.rm: Space Mono
+mathtext.it: Space Mono:italic
+mathtext.bf: Space Mono:bold
+
+axes.facecolor: f2efe6
+axes.edgecolor: 000000
+axes.linewidth: 3
+axes.axisbelow: True
+axes.grid: True
+axes.labelcolor: 000000
+axes.labelweight: bold
+axes.labelpad: 8
+axes.titleweight: bold
+axes.titlelocation: left
+axes.titlesize: 10
+axes.titlepad: 12
+axes.prop_cycle: cycler('color', ['000000', 'ff3b00', '6b6b6b', 'c9b9a0'])
+
+grid.color: 000000
+grid.linewidth: 0.5
+grid.linestyle: (0, (1, 3))
+
+xtick.direction: in
+ytick.direction: in
+xtick.major.size: 6
+ytick.major.size: 6
+xtick.major.width: 2
+ytick.major.width: 2
+xtick.color: 000000
+ytick.color: 000000
+
+lines.linewidth: 1.8
+lines.markersize: 6
+lines.solid_capstyle: butt
+
+legend.fancybox: False
+legend.framealpha: 1
+legend.edgecolor: 000000
+legend.facecolor: f2efe6
+legend.fontsize: 8
+legend.borderpad: 0.8
+
+text.color: 000000
