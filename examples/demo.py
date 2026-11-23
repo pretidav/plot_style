@@ -1,4 +1,6 @@
-"""Demo: python examples/demo.py  ->  demo.png"""
+"""Demo: python examples/demo.py  ->  demo.png (next to this file)"""
+from pathlib import Path
+
 import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.colors import TwoSlopeNorm
@@ -27,4 +29,4 @@ fig.colorbar(m, ax=ax2)
 for ax in (ax1, ax2):
     plot_style.style_axes(ax, grid=ax is ax1)
 fig.tight_layout()
-plot_style.savefig(fig, "demo.png")
+plot_style.savefig(fig, Path(__file__).with_name("demo.png"))

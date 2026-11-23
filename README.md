@@ -30,7 +30,7 @@ The package is not published: it is installed from the folder of the repository,
 
    ```
    python -c "import plot_style; print(plot_style.__version__)"
-   python plot_style/examples/demo.py    # writes demo.png
+   python plot_style/examples/demo.py    # writes plot_style/examples/demo.png
    ```
 
 Update after a `git pull` with the same command and `--upgrade` (an editable install needs nothing). Remove with `pip uninstall plot_style`.
@@ -54,7 +54,9 @@ with plot_style.context():               # 3. for the figures of a block only
     ...
 ```
 
-A complete figure:
+A complete figure (the script is [examples/figure.py](examples/figure.py), and this is its output):
+
+![figure](examples/figure.png)
 
 ```python
 import numpy as np
@@ -89,4 +91,4 @@ The labels of the blog figures are in capitals, written by hand in the strings (
 - `PAPER`, `INK`, `ACCENT`, `GREY`, `SAND`, `DASHED`, `DOTTED`: the colours and the two line styles used for reference lines.
 - `CMAP_DIVERGING` (ink, paper, accent; use it with `TwoSlopeNorm`) and `CMAP_SEQUENTIAL` (paper, ink), also registered in matplotlib as `"brutalist_div"` and `"brutalist_seq"`.
 
-`python examples/demo.py` makes `demo.png`. `pip install -e "./plot_style[test]"` and `pytest plot_style/tests` run the checks.
+`python examples/figure.py` makes the figure above and `python examples/demo.py` makes a second one with a legend, markers and a diverging colormap (`examples/demo.png`). `pip install -e "./plot_style[test]"` and `pytest plot_style/tests` run the checks.
